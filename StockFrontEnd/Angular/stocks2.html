@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+
+<head>
+</head>
+
+<body>
+    <!-- Bitcoin -->
+        <div class="container-fluid">
+            <div class="row">
+                <div  ng-include="'Templates/Stocks2/stocksBitcoin.tmpl.html'">
+                </div>
+            </div>
+        </div>
+
+    <!-- Ethereum -->
+        <div class="container-fluid">
+            <div class="row">
+                <div  ng-include="'Templates/Stocks2/stocksEthereum.tmpl.html'">
+                </div>
+            </div>
+        </div>
+
+    <!-- BSE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div ng-include="'Templates/Stocks2/stocksBse.tmpl.html'">
+                </div>
+            </div>
+        </div>
+
+    <script src="../CommonContent/Scripts/angular.min.js"></script>
+    <script src="../CommonContent/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../CommonContent/Scripts/bootstrap.min.js"></script>
+    <link href="../CommonContent/Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CommonContent/Styles/stocks2.css" rel="stylesheet" />
+    <!-- Modules -->
+    <script src="Modules/stocks.module.js"></script>
+    <script src="Modules/bitcoin.module.js"></script>
+    <script src="Modules/ethereum.module.js"></script>
+    <script src="Modules/main.module.js"></script>
+    <!-- Services -->
+    <script src="Services/stocks.service.js"></script>
+    <script src="Services/bitcoin.service.js"></script>
+    <script src="Services/ethereum.service.js"></script>
+    <!-- Controller -->
+    <script src="Controllers/stocks.controller.js"></script>
+    <script src="Controllers/bitcoin.controller.js"></script>
+    <script src="Controllers/ethereum.controller.js"></script>
+</body>
+
+</html>

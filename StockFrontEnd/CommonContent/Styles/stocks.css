@@ -1,0 +1,67 @@
+/* Styles go here */
+.alert{
+    margin-bottom:2px;
+    background: black;
+    color:white;
+  }
+  .paddingLeft10{
+    padding-left:10px;
+  }
+  .paddingLeft80{
+    padding-left:80px;
+  }
+  .paddingBottom5{
+    padding-bottom: 5px;
+  }
+  .stockBox{
+    background:white;
+    width:200px;
+    float:left;
+    border:1px solid black;
+    margin:2px;
+    margin-left:70px;
+  }
+.stockCryptoBox {
+    background: white;
+    width: 200px;
+    float: left;
+    border: 1px solid black;
+    margin: 2px;
+    margin-left: 190px;
+}
+  .stockGreen{
+    color:green;
+  }
+  .stockRed{
+    color:red;
+  }
+  .floatLeft{
+    float:left;
+  }
+  .updatedFont{
+    font-size:12px;
+  }
+  .variation{
+    width: 200px;
+    float:left; 
+    display:block;
+  }
+  .inlineBlock{
+    display:inline-block;
+  }
+  .marginLeft20{
+    margin-left:20px;
+  }
+  .image{
+    height: 10px;
+    width:10px;
+  }
+.fontHead {
+    font-size: 30px;
+}
+  
+
+  /*For testing purpose*/
+  .borderTest{
+    border:1px solid black;
+  }

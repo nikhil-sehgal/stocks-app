@@ -1,0 +1,34 @@
+﻿<div ng-controller="stocksController as stocksControllerObj">
+    <div class="alert alert-info fontHead">
+        {{stocksControllerObj.title}}
+    </div>
+    <div ng-repeat="s in stocksControllerObj.data">
+        <div class="stockBox">
+            <div class="alert alert-info paddingLeft10">
+                <strong>{{s.currentCompany}}</strong>
+            </div>
+            <div class="paddingLeft10" ng-class="{true:'stockGreen',false:'stockRed'}[s.currentPrice > s.lastDayClosingPrice]">
+                <strong>
+                    <h2>{{s.currentPrice}}</h2>
+                </strong>
+            </div>
+            <div class="variation paddingBottom5">
+                <div class="floatLeft inlineBlock paddingLeft10">
+                    <strong>{{s.changeInPrice | number : 2}}</strong>
+                </div>
+
+
+                <div class="floatLeft inlineBlock marginLeft20">
+                    <!-- condition && true || false -->
+                    <img class="image" ng-src="{{s.currentPrice > s.lastDayClosingPrice && '../../StocksFrontEndHtml/CommonContent/Images/up.jpg' || '../../StocksFrontEndHtml/CommonContent/Images/down.jpg'}}" />
+                </div>
+                <!-- <div class="floatLeft inlineBlock marginLeft20">image</div> -->
+                <div class="floatLeft inlineBlock marginLeft20">
+                    <strong>{{s.changePercent | number : 2}}%</strong>
+                </div>
+            </div>
+
+            <div class="paddingLeft10 updatedFont">Updated : {{s.lastUpdateDate.substr(6)}} {{s.lastUpdateTime}}</div>
+        </div>
+    </div>
+</div>

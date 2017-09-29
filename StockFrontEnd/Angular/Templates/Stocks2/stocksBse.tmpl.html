@@ -1,0 +1,75 @@
+﻿ <!-- Bse Div -->
+<div ng-controller="stocksController as stocksControllerObj">
+    <div class="alert alert-danger">{{stocksControllerObj.title}}</div>
+
+    <div style="margin-left:50px">
+        <!-- box -->
+        <div class="stockBox" ng-repeat="s in stocksControllerObj.data">
+            <!--Header-->
+            <div class="stockHead posRelative">
+                <span class="spanHead posRelative">
+                    <strong>{{s.currentCompany}}</strong>
+                </span>
+            </div>
+            <!--price-->
+            <div class="divPriceBox floatLeft">
+                <div class="divCurrentPrice">
+                    <span class="spanCurrentPrice posRelative" ng-class="{true:'stockGreen',false:'stockRed'}[s.currentPrice > s.lastDayClosingPrice]">
+                        <strong>{{s.currentPrice | number : 2}}</strong>
+                    </span>
+                </div>
+                <div class="divChangeInPrice floatLeft">
+                    <span class="spanChangeInPrice posRelative">
+                        {{s.changeInPrice | number : 2}}
+                    </span>
+                </div>
+                <div class="divImage floatLeft">
+                    <img class="image" ng-src="{{s.currentPrice > s.lastDayClosingPrice && '../../StocksFrontEndHtml/CommonContent/Images/up.jpg' || '../../StocksFrontEndHtml/CommonContent/Images/down.jpg'}}" />
+                </div>
+                <div class="divChangePercent floatLeft">
+                    <span>
+                        {{s.changePercent | number : 2}} %
+                    </span>
+                </div>
+            </div>
+
+            <!--low high open previous close -->
+            <div class="divInfoBox floatLeft">
+                <div class="width50 height45 floatLeft">
+                    <div>
+                        <span class="posRelative left20">Open</span>
+                    </div>
+                    <div>
+                        <span class="posRelative left20 "><strong>{{s.openToday}}</strong></span>
+                    </div>
+                </div>
+                <div class="width50 height45 floatLeft">
+                    <div>
+                        <span class="posRelative left20 ">High</span>
+                    </div>
+                    <div>
+                        <span class="posRelative left20 "><strong>{{s.high}}</strong></span>
+                    </div>
+                </div>
+                <div class="width50 height45 floatLeft">
+                    <div>
+                        <span class="posRelative left20 ">Previous close</span>
+                    </div>
+                    <div>
+                        <span class="posRelative left20 "><strong>{{s.lastDayClosingPrice}}</strong></span>
+                    </div>
+                </div>
+                <div class="width50 height45 floatLeft">
+                    <div>
+                        <span class="posRelative left20 ">Low</span>
+                    </div>
+                    <div>
+                        <span class="posRelative left20 "><strong>{{s.low}}</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Bse Div -->

@@ -1,0 +1,108 @@
+.stockBox {
+    height: 140px;
+    border: 1px solid #bcdff1;
+    width: 400px;
+    margin: 2px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.CrytpStockBox {
+    height: 110px;
+    border: 1px solid #bcdff1;
+    width: 400px;
+    margin: 2px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.stockHead {
+    height: 40px;
+    background: #d9edf7;
+    color: #31708f;
+    border: 1px solid #bcdff1;
+}
+
+.spanHead {
+    font-size: 30px;
+    left: 20px
+}
+
+.stockGreen {
+    color: green;
+}
+
+.stockRed {
+    color: red;
+}
+
+.divPriceBox {
+    height: 90px;
+    width: 45%;
+}
+
+.divCurrentPrice {
+    height: 70px;
+}
+
+.spanCurrentPrice {
+    font-size: 45px;
+    left: 10px;
+}
+
+.divChangeInPrice {
+    height: 20px;
+    width: 40%;
+}
+
+.spanChangeInPrice {
+    left: 15px;
+}
+
+.divImage {
+    height: 20px;
+    width: 20%;
+}
+
+.divChangePercent {
+    height: 20px;
+    width: 40%;
+}
+
+.divInfoBox {
+    height: 90px;
+    width: 55%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.height45 {
+    height: 45px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.posRelative {
+    position: relative;
+}
+
+.left20 {
+    left: 20px;
+}
+
+.image {
+    height: 15px;
+    width: 15px;
+}
+
+.alert {
+    font-size: 32px;
+}
+
+
+
+/* //https://plnkr.co/edit/SnhMcnNV2nQWg6wX90DP?p=preview */

@@ -1,0 +1,17 @@
+﻿<div ng-controller="ethereumController as ethereumControllerObj">
+    <div class="alert alert-info fontHead">
+        {{ethereumControllerObj.title}}
+    </div>
+    <div>
+        <div class="stockCryptoBox">
+            <div class="alert alert-info paddingLeft10">
+                <strong>{{ethereumControllerObj.data.currencyName}}</strong>
+            </div>
+            <div class="paddingLeft10">
+                <strong>
+                    <h2>{{ethereumControllerObj.data.currentPrice | currency}}</h2>
+                </strong>
+            </div>
+        </div>
+    </div>
+</div>

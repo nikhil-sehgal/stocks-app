@@ -1,0 +1,26 @@
+﻿<!-- Ethereum Div -->
+    <div ng-controller="ethereumController as ethereumControllerObj">
+        <div class="alert alert-danger">
+            {{ethereumControllerObj.title}}
+        </div>
+        <div style="margin-left:50px">
+            <!-- box -->
+            <div class="CrytpStockBox">
+                <!--Header-->
+                <div class="stockHead posRelative">
+                    <span class="spanHead posRelative">
+                        <strong>{{ethereumControllerObj.data.currencyName}}</strong>
+                    </span>
+                </div>
+                <!--price-->
+                <div class="divPriceBox floatLeft">
+                    <div class="divCurrentPrice">
+                        <span class="spanCurrentPrice posRelative">
+                            <strong>{{ethereumControllerObj.data.currentPrice | currency}}</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ethereum Div 

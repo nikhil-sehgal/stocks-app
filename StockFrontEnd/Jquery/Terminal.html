@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <table class="table table-bordered table-sm" id="tblData">
+                    <thead  style="background-color:black; color:white" class="thead-inverse">
+                        <tr class="rowHead">
+                            <th >Company</th>
+                            <th >Current Price</th>
+                            <th >Change</th>
+                            <th >Change %</th>
+                            <th >Today Open</th>
+                            <th >Previous Close</th>
+                            <th >High</th>
+                            <th >Low</th>
+                            <th >Price Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="loader"></div>
+    <div id="dots"></div>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/g-spinner.min.js"></script>
+    <script src="Scripts/StocksGSpinner.Scripts.js"></script>
+    <link href="Styles/gspinner.min.css" rel="stylesheet" />
+    <link href="Styles/StocksStyle.css" rel="stylesheet" />
+</body>
+</html>

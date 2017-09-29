@@ -1,0 +1,70 @@
+﻿
+/*apply this property on row to align all columns text to center*/
+.textCenterAlign {
+    text-align: center;
+}
+/*apply this property on coulumns for middle align and font size*/
+.columnsFontSize {
+    font-size: large;
+}
+.companyName {
+    font-size: large;
+    font-weight: bold;
+    text-align:left;
+}
+.textRightAlign {
+    text-align:right;
+}
+.columnsFontAlign {
+  vertical-align: middle  !important; 
+}
+.rowHead {
+font-size:large;
+text-align: center !important;
+}
+.currentValueRed {
+    color: #de1439;
+    font-size: x-large;
+    font-weight: bold;
+    /*align-items:baseline;*/
+}
+
+.currentValueGreen {
+    color: green;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.currentValueUp {
+    color: white;
+    font-size: xx-large;
+    font-family: Arial;
+    font-weight: bold;
+    align-items: baseline;
+    vertical-align: bottom;
+    background-color: green;
+}
+
+.currentValueDown {
+    color: white;
+    font-size: xx-large;
+    font-family: Arial;
+    font-weight: bold;
+    align-items: baseline;
+    vertical-align: bottom;
+    background-color: #de1439;
+}
+
+.changeValueRed {
+    color: #de1439;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.changeValueGreen {
+    color: green;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial;
+}
